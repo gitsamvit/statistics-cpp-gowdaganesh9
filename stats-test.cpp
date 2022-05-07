@@ -17,8 +17,8 @@ TEST_CASE("average is NaN for empty array") {
     auto computedStats = Statistics::ComputeStatistics({});
     float epsilon=isnan();
     REQUIRE(std::abs(computedStats.average == epsilon);
-            REQUIRE(std::abs(computedStats.max== epsilon);
-                    REQUIRE(std::abs(computedStats.min == epsilon);
+    REQUIRE(std::abs(computedStats.max== epsilon);
+    REQUIRE(std::abs(computedStats.min == epsilon);
     
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
