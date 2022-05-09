@@ -5,7 +5,7 @@
 
 #include <cmath>
 
-/*TEST_CASE("reports average, minimum and maximum") {
+TEST_CASE("reports average, minimum and maximum") {
 	std::vector<float> data{1.5, 8.9, 3.1, 4.5};
     auto computedStats=Statistics::ComputeStatistics(data);
     float epsilon = 0.001;
@@ -37,9 +37,7 @@ TEST_CASE("average is NaN for empty array") {
     /*REQUIRE(std::abs(computedStats.average == epsilon);
     REQUIRE(std::abs(computedStats.max== epsilon);
     REQUIRE(std::abs(computedStats.min == epsilon);*/
-    REQUIRE(isnan(computedStats.Average));
-    REQUIRE(isnan(computedStats.Max));
-    REQUIRE(isnan(computedStats.Min));
+    REQUIRE(computedStats.Average == epsilon));
     
     /*//All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
