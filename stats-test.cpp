@@ -32,7 +32,7 @@ TEST_CASE("reports average, minimum and maximum") {
 
 TEST_CASE("average is NaN for empty array") {
     auto computedStats = Statistics::ComputeStatistics({});
-    float epsilon=isnan();
+    float epsilon=isnan(0.0);
 	
     /*REQUIRE(std::abs(computedStats.average == epsilon);
     REQUIRE(std::abs(computedStats.max== epsilon);
