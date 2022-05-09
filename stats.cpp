@@ -1,6 +1,5 @@
 #include "stats.h"
 #include <cmath>
-#include<math.h>
 #include<bits/stdc++.h>
 
 template<typename T> Statistics::Stats<>::Stats(){}
@@ -20,5 +19,4 @@ template<typename T> Statistics::Stats<T> Statistics::ComputeStatistics(const st
     T sum=accumulate(data.begin(), data.end() , 0);
     st.Average=(sum/data.size());
     return st;
-    
 }
