@@ -1,5 +1,6 @@
 #include "stats.h"
 #include <cmath>
+#include<math.h>
 #include<bits/stdc++.h>
 
 template<typename T> Statistics::Stats<>::Stats(){}
