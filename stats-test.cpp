@@ -37,13 +37,17 @@ TEST_CASE("average is NaN for empty array") {
     /*REQUIRE(std::abs(computedStats.average == epsilon);
     REQUIRE(std::abs(computedStats.max== epsilon);
     REQUIRE(std::abs(computedStats.min == epsilon);*/
+    REQUIRE(isnan(computedStats.Average));
+    REQUIRE(isnan(computedStats.Max));
+    REQUIRE(isnan(computedStats.Min));
     
-    //All fields of computedStats (average, max, min) must be
+    /*//All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
     //Design the REQUIRE statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
-}*/
+    */
+}
 
 TEST_CASE("raises alerts when max is greater than threshold") {
     EmailAlert emailAlert;
