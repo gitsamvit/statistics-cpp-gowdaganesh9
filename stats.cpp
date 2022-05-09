@@ -14,7 +14,6 @@ template<typename T> Statistics::Stats<T> Statistics::ComputeStatistics(const st
        st.Max=NAN;
        st.Min=NAN;
     }
-    
     st.Max=*max_element(data.begin(),data.end());
     st.Min=*min_element(data.begin(),data.end());
     T sum=accumulate(data.begin(), data.end() , 0);
