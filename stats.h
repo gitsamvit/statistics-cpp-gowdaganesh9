@@ -3,6 +3,7 @@
 #include<math.h>
 #include<bits/stdc++.h>
 #include<numeric>
+#include<cmath>
 using namespace std;
 
 namespace Statistics
