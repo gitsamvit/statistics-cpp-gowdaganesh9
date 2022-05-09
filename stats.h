@@ -23,7 +23,7 @@ namespace Statistics
 	
 }
 
-/*#include <vector>
+#include <vector>
 
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<___>& );
