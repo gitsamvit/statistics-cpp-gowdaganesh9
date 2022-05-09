@@ -16,7 +16,7 @@ namespace Statistics
 		T Min;
 		Stats();//empty array
 		//Stats(float avg,float max,float min);
-		Stats(T average,T Max,T Min);
+		Stats(T Average,T Max,T Min);
 	};
 	template<typename T=double>
 	Stats<T> ComputeStatistics(const std::vector<T>& );
