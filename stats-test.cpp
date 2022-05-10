@@ -16,10 +16,18 @@ TEST_CASE("reports average, minimum and maximum") {
 TEST_CASE("average is NaN for empty array") {
 	//std::vector<float> data{};
     auto computedStats = Statistics::ComputeStatistics({});
+    REQUIRE(isnan(computedStats.Average));
+    REQUIRE(isnan(computedStats.Max));
+    REQUIRE(isnan(computedStats.Min));
+}
+
+/*TEST_CASE("average is NaN for empty array") {
+	//std::vector<float> data{};
+    auto computedStats = Statistics::ComputeStatistics({});
     float epsilon=isnan();
     /*REQUIRE(std::abs(computedStats.Average));
     REQUIRE(isnan(computedStats.Max));
-    REQUIRE(isnan(computedStats.Min));*/
+    REQUIRE(isnan(computedStats.Min));
     REQUIRE(std::abs(computedStats.average == epsilon));
     REQUIRE(std::abs(computedStats.max== epsilon));
     REQUIRE(std::abs(computedStats.min == epsilon));
