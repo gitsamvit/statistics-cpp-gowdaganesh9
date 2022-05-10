@@ -9,7 +9,7 @@ using namespace std;
 namespace Statistics
 {
     template <typename T=double>	//default
-	class Stats
+	public class Stats 
    	 {
 	   public:
 		T Average;
