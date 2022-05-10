@@ -2,6 +2,7 @@
 #include <cmath>
 #include<bits/stdc++.h>
 using namespace Statistics;
+using namespace std;
 
 template<typename T> Statistics::Stats<>::Stats(){}
 template<typename T> Statistics::Stats<T,T,T>::Stats(T Average,T Max,T Min):Average(Average),Max(Max),Min(Min){}
