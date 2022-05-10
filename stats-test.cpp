@@ -20,7 +20,7 @@ TEST_CASE("average is NaN for empty array") {
     /*REQUIRE(std::abs(computedStats.Average));
     REQUIRE(isnan(computedStats.Max));
     REQUIRE(isnan(computedStats.Min));*/
-    REQUIRE(std::abs(computedStats.average == epsilon);
-    REQUIRE(std::abs(computedStats.max== epsilon);
-    REQUIRE(std::abs(computedStats.min == epsilon);
+    REQUIRE(std::abs(computedStats.average == epsilon));
+    REQUIRE(std::abs(computedStats.max== epsilon));
+    REQUIRE(std::abs(computedStats.min == epsilon));
 }
